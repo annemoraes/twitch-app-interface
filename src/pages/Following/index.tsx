@@ -1,6 +1,8 @@
 import React from 'react';
 import { View, FlatList } from 'react-native';
 import Header from '../../components/Header';
+import Heading from '../../components/Heading';
+import Title from '../../components/Title';
 
 import { Wrapper, Container, Main } from './styles';
 
@@ -15,11 +17,11 @@ const Following: React.FC = () => {
      const items: Item[] = [
       {
         key: 'PAGE_HEADING',
-        render: () => <View/>
+        render: () => <Heading>Following</Heading>
       },
       {
         key: 'FOLLOWED_CATEGORIES',
-        render: () => <View/>,
+        render: () => <Title>Followed Categories</Title>,
         isTitle: true,
       },
       { 
@@ -28,7 +30,7 @@ const Following: React.FC = () => {
       },
       {
         key: 'LIVE_CHANNELS',
-        render: () => <View/>,
+        render: () => <Title>Live Channels</Title>,
         isTitle: true,
       },
       { 
@@ -37,7 +39,7 @@ const Following: React.FC = () => {
       },
       {
         key: 'CONTINUE_WATCHING',
-        render: () => <View/>,
+        render: () => <Title>Continue Watching</Title>,
         isTitle: true,
       },
       { 
@@ -46,7 +48,7 @@ const Following: React.FC = () => {
       },
       {
         key: 'OFFLINE_CHANNELS',
-        render: () => <View/>,
+        render: () => <Title>Offline Channels</Title>,
         isTitle: true,
       },
       { 
